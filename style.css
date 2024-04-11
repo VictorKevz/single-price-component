@@ -1,0 +1,145 @@
+body{
+font-family: "Karla", sans-serif;
+margin: 0;
+padding: 0;
+box-sizing: 0;
+background-color: hsl(204, 43%, 93%);
+}
+h1,h2,h3,span{
+    font-weight: 700;
+}
+p{
+    font-weight: 400;
+    color: #fff;
+    line-height: 1.5;
+    font-size: 16px;
+}
+span{
+    font-size: 30px;
+    padding-right: 14px;
+    opacity: 1;
+
+}
+/* Responsiveness */
+@media (max-width:800px) {
+    .grid-container>.item{
+        grid-column: span 2;
+        width: 50%;
+        margin: 0 auto;
+
+    }
+    .grid-container{
+        margin: 72px auto;
+        flex-direction: column;
+        height: 100%;
+
+    }
+   
+    .grid-container>.item.subscription{
+        border-radius: 0px;
+    }
+    .grid-container>.item.why-us{
+        border-radius: 0px 0px 10px 10px;
+    }
+    
+}
+.outer-container{
+    display: flex;
+    min-height: 100vh;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+.grid-container{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: auto;
+    /* min-width: max-content;     */
+
+}
+.item{
+    /* This padding is probably wrong */
+    padding: 40px 80px 40px 40px;
+}
+.item.community{
+    background-color: #fff;
+    border-radius: 10px 10px 0 0;
+    grid-column: span 2;
+
+}
+.item.community>h2{
+    color: hsl(179, 62%, 43%);;
+
+}
+.item.community>h3{
+    color: hsl(71, 73%, 54%);
+}
+.item.community>p{
+    color: hsl(218, 22%, 67%);
+
+}
+.item.subscription,.item.why-us{
+    color: hsl(204, 43%, 93%);
+}
+.item.subscription{
+    background-color: hsl(179, 62%, 43%);
+    border-radius: 0px 0px 0px 10px;
+
+}
+.item.subscription>.price{
+    font-size: 16px;
+    opacity: 0.5;
+    font-weight: 200;
+
+}
+.item.subscription>button{
+    width: 237px;
+    height: 48px;
+    color: #fff;
+    border-radius: 10px;
+    border: none;
+    background-color:hsl(71, 73%, 54%) ;
+    margin-top: 30px;
+    font-weight: 700;
+}
+.item.why-us{
+    background-color:  hsl(178, 62%, 47%);
+    border-radius: 0px 0px 10px 0px;
+
+}
+ul {
+    margin: 0; 
+    padding: 0; 
+    list-style: none; 
+
+  }
+  
+  li {
+    padding-left: 0;
+    line-height: 1.7;
+    font-size: 14px;
+    font-weight: 300;
+  }
+  
+
+
+
+/* Footer Section */
+footer{
+    box-sizing: border-box;
+    position: absolute;
+    text-align: center;
+    font-size: 13px; 
+    bottom: 0;
+}
+
+footer>p{
+    opacity: 0.9;
+    color: black;
+
+}
+
+.icon{
+    vertical-align: middle; 
+    color: hsl(83, 82%, 48%);
+}
